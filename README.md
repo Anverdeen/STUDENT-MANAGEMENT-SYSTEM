@@ -1,0 +1,2 @@
+# STUDENT-MANAGEMENT-SYSTEM
+This is mini project of STUDENT MANAGEMENT SYSTEM using C++
