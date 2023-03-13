@@ -1,0 +1,47 @@
+#include <iostream>
+#include<vector>
+#include<stdio.h>
+#include<cstring>
+#include<fstream>
+#include<algorithm>
+
+using namespace std;
+
+class student
+{
+    public:
+    
+        long int reg;
+        char name[80],branch[50];
+        void input()
+        {
+            cout<<"\n Enter the Name: ";
+            cin>>name;
+            cout<<"\n Enter roll no: ";
+            cin>>reg;
+            fflush(stdin);
+            cout<<"\n Enter Branch: ";
+            cin>>branch;
+        }
+        void display()
+        {
+            cout<<"\t\tDisplay records";
+            cout<<"\n";
+            cout<<"\n Name - "<<name;
+            cout<<"\n Reg no - "<<reg;
+            cout<<"\n Branch - "<<branch;
+            cout<<"\n";
+        }
+        bool operator ** (student a)
+        {
+            if(reg==a)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+}
